@@ -1,14 +1,25 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
 
-def kangaroo(x1, v1, x2, v2):
+def kangaroo(pos1, jump1, pos2, jump2):
+    if pos1 == pos2 and jump1 == jump2:
+        return 'YES'
+    # equation system would be:
+    # pos1 * x + jump1 = pos2 * y + jump2
+    # x=y
+    # pos1 * x + jump1 = pos2 * x + jump2
     
-    return 'NO'
+    pos_x = pos1 - pos2;
+
+    if pos_x == 0:
+        return 'NO'
+
+    jump_x = jump1 - jump2;
+
+    x = jump_x / pos_x
+
+    return 'YES' if x == int(x) else 'NO'
 
 if __name__ == '__main__':
 

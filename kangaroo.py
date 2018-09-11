@@ -14,12 +14,12 @@ def kangaroo(pos1, jump1, pos2, jump2):
     #------------------
     # jump1 * x + pos1 = jump2 * x + pos2
     
-    pos_x = pos1 - pos2;
+    pos_x = pos1 - pos2
     print('pos_x = %s' % pos_x)
     if pos_x == 0:
         return 'NO'
 
-    jump_x = (jump1 - jump2);
+    jump_x = (jump1 - jump2)
     print('jump_x = %s' % jump_x)
 
     x = pos_x / jump_x

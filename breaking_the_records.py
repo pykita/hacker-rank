@@ -21,7 +21,7 @@ if __name__ == '__main__':
     n = int(input())
 
     scores = list(map(int, input().rstrip().split()))
-
+#
     result = breakingRecords(scores)
 
     with open(os.environ['OUTPUT_PATH'], 'w') as fptr:

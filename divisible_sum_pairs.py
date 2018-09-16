@@ -13,13 +13,10 @@ def divisibleSumPairs(n, k, ar):
     return acc
 
 if __name__ == '__main__':
-    # n, k = map(int, input().split())
+    n, k = map(int, input().split())
 
-    # ar = list(map(int, input().rstrip().split()))
-
-    n, k, ar = 6, 3, [1, 3, 2, 6, 1, 2]
+    ar = list(map(int, input().rstrip().split()))
 
     result = divisibleSumPairs(n, k, ar)
-    print(result)
-    # with open(os.environ['OUTPUT_PATH'], 'w') as fptr
-    #     fptr.write(str(result) + '\n')
+    with open(os.environ['OUTPUT_PATH'], 'w') as fptr:
+        fptr.write(str(result) + '\n')

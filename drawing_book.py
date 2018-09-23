@@ -3,16 +3,15 @@
 import os
 import sys
 
-#
-# Complete the pageCount function below.
-#
+import math
+
 def pageCount(n, p):
     steps = 0
-    if 2 * p < n:
+    if 2 * p <= n:
         steps = p // 2
     else:
-        steps = (n - p) // 2
-        steps += 1 if n % 2 == 0 else 0
+        steps = math.ceil((n - p) / 2)
+        # steps += 1 if n % 2 == 0 else 0
     return  steps
 
 if __name__ == '__main__':
@@ -20,7 +19,7 @@ if __name__ == '__main__':
 
     # p = int(input())
 
-    n, p = 6, 5
+    n, p = 6, 6
 
     result = pageCount(n, p)
     print(result)

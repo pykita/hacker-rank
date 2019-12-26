@@ -1,2 +1,16 @@
 .vscode
 answer.txt
+bin/
+project/
+target/
+build/
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+# mac
+.DS_Store
